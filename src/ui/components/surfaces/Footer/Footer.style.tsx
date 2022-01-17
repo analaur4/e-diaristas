@@ -4,6 +4,7 @@ import { Container, IconButton, Link, LinkProps, List, ListItem, Typography } fr
 export const FooterContainer = styled('footer')`
     background-color: ${({theme}) => theme.palette.primary.main};
     color: ${({theme}) => theme.palette.primary.contrastText};
+    margin-top: auto;
     padding: ${({theme}) => theme.spacing(4)} 0;
 `;
 
