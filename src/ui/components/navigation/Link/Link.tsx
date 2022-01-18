@@ -15,11 +15,11 @@ const Link: React.FC<LinkProps> = ({ children, href, mui, next, Component = MuiL
     const isNextEnv = Boolean(Router.router);
 
 
-    return isNextEnv ? (<div>
+    return isNextEnv ? (
         <NextLink {...next} href={href} passHref>
             <Component {...mui} {...props}>{children}</Component>
         </NextLink>
-    </div>) : (
+    ) : (
         <Component href={href} {...mui} {...props}>{children}</Component>
     );
 }
